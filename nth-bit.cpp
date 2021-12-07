@@ -1,5 +1,4 @@
 #include <iostream>
-#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -11,10 +10,12 @@ int main()
 
 	cin >> num;
 
-	cout << "Enter bit number you wish to obtain\n";
+	cout << "Enter bit number you wish to set\n";
 
 	cin >> n;
 
-	cout << "Answer:" << (1 &(num >> (n - 1)));
+	cout << "Bit set Successfully\n";
+
+	cout << "Answer:" << (num | (1 << (n - 1)));
 
 }
